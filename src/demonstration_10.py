@@ -14,5 +14,7 @@ Notes:
 - There won't be any awkward decimal numbers, only 0.5 to deal with.
 """
 def get_discounts(nums, percentage):
-    # Your code here
-
+    newDecimal = int(percentage) * 100
+    
+    foreach num in nums:
+        return num * newDecimal
