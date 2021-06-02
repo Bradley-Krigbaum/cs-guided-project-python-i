@@ -16,5 +16,20 @@ Examples:
 - XO("zzoo") ➞ False
 """
 def XO(txt):
-    # Your code here
-
+    newString = txt
+    xNums = 0
+    
+    for i in newString:
+        if i == 'x' or i == 'X':
+            xNums += 1
+            print( xNums )
+            
+    if xNums >= ( len(newString) - xNums ):
+        return True
+    elif xNums == 0:
+        return True
+    elif xNums < ( len(newString) - xNums ):
+        return False
+        
+        
+        
