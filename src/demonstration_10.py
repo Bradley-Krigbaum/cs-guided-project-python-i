@@ -14,7 +14,12 @@ Notes:
 - There won't be any awkward decimal numbers, only 0.5 to deal with.
 """
 def get_discounts(nums, percentage):
-    newDecimal = int(percentage) * 100
+    newDecimal = int( percentage.strip('%') ) * .01
+    finalPrice = []
     
-    foreach num in nums:
-        return num * newDecimal
+    for num in nums:
+        newNums = num * newDecimal
+        finalPrice.append( newNums )
+    return finalPrice
+    
+# get_discounts([2, 4, 6, 8, 10], '50%')
