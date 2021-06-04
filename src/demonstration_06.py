@@ -30,6 +30,3 @@ def XO(txt):
         return True
     elif xNums < ( len(newString) - xNums ):
         return False
-        
-        
-        
