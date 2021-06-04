@@ -21,5 +21,5 @@ def get_discounts(nums, percentage):
         newNums = num * newDecimal
         finalPrice.append( newNums )
     return finalPrice
-    
+
 # get_discounts([2, 4, 6, 8, 10], '50%')

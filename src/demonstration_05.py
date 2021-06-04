@@ -30,6 +30,3 @@ def sort_by_length( lst ):
             nextValue -= 1    
         newLst[nextValue + 1] = indexPlaceholder
     return newLst
-        
-        
-        
